@@ -43,7 +43,8 @@ class HBDatabase:
         subscriptions = Table(
             SUBSCRIPTIONS,
             metadata,
-            Column("chan_id", String, primary_key=True),
+            Column("id", Integer, primary_key=True),
+            Column("chan_id", String),
             Column("login", String, ForeignKey("people.login"))
         )
         try:
