@@ -1,4 +1,7 @@
 """Manage connection with sqlite3 database."""
+
+# flake8: noqa
+
 from sqlalchemy import create_engine
 from sqlalchemy import Table, MetaData, Column, String, Integer, ForeignKey
 
