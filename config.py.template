@@ -1,7 +1,10 @@
-r"""Configuration file. /!\\ contains secret : do not add to Git."""
+"""Configuration file. /!\\ contains secret : do not add to Git."""
 
 client_id = ""  # L'ID de votre client OAuth
 client_secret = ""  # Le secret de votre client OAuth (NE PAS PUBLIER CE SECRET)
 scope = "default linkcs-user:read"  # Les scopes nécessaires pour votre requête
 username = ""  # Votre nom d'utilisateur ViaRézo
 password = ""  # Votre mot de passe ViaRézo
+auth_url = "" # URL de l'auth
+linkcs_api_url = "" # URL de l'API LinkCS
+bot_token = "" # Token du bot Telegram
