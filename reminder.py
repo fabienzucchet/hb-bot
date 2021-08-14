@@ -8,11 +8,9 @@ from database import HBDatabase,SQLITE
 from config import bot_token, database_path
 
 bot = Bot(bot_token)
-#database = Database()
 
 
 def reminder():
-    idChat = '902516518'
     today_day = str(datetime.datetime.now().day)
     today_month = str(datetime.datetime.now().month)
     select_query='SELECT first_name,last_name,chan_id FROM people JOIN subscriptions ON people.login=subscriptions.login WHERE birth_day={} AND birth_month={};'.format(today_day,today_month)
