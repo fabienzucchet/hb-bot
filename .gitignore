@@ -130,3 +130,6 @@ dmypy.json
 
 # Secrets file
 config.py
+
+# Database
+*.sql
