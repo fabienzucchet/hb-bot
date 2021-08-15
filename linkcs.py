@@ -43,12 +43,16 @@ def fetch_linkcs_user(login: str):
     request = get("{url}?query={{{query}}}".format(url=url, query=query), headers=headers)
     data = request.json()
 
-    return data
+    if data["data"]==None :
+        return None   
+    else :
+        data = data["data"]["user"]
+        return data
 
 
 if __name__ == '__main__':
 
-    login = "your_id"
+    login = "2019zucchetf"
 
     data = fetch_linkcs_user(login)
 
